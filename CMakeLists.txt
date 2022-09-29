@@ -61,4 +61,4 @@ target_link_libraries(bitwise helib)
 add_executable(bmain ./src/bmain.cpp)
 target_link_libraries(bmain helib)
 
-#cmake -Dhelib_DIR=/home/smhan/helib_install_t/helib_pack/share/cmake/helib ../ .
+#cmake -Dhelib_DIR=/home/smhan/helib_install/helib_pack/share/cmake/helib ../ .

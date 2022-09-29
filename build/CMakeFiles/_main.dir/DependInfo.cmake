@@ -1,15 +1,24 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hanseun/HE_searchable/src/_main.cpp" "/home/hanseun/HE_searchable/build/CMakeFiles/_main.dir/src/_main.cpp.o"
+  "/home/hanseun/HE_searchable/src/trie.cpp" "/home/hanseun/HE_searchable/build/CMakeFiles/_main.dir/src/trie.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "HELIB_BOOT_THREADS"
+  "HELIB_THREADS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/smhan/searchableHE_trials/src/_main.cpp" "CMakeFiles/_main.dir/src/_main.cpp.o" "gcc" "CMakeFiles/_main.dir/src/_main.cpp.o.d"
-  "/home/smhan/searchableHE_trials/src/trie.cpp" "CMakeFiles/_main.dir/src/trie.cpp.o" "gcc" "CMakeFiles/_main.dir/src/trie.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  ".././include"
+  "/home/hanseun/helib_install/helib_pack/include"
   )
 
 # Targets to which this target links.

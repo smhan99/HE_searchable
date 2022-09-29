@@ -1,31 +1,27 @@
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_bf1c9/fast && /usr/bin/make  -f CMakeFiles/cmTC_bf1c9.dir/build.make CMakeFiles/cmTC_bf1c9.dir/build
-make[1]: Entering directory '/home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_bf1c9.dir/src.cxx.o
-/usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++1z -o CMakeFiles/cmTC_bf1c9.dir/src.cxx.o -c /home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_bf1c9
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf1c9.dir/link.txt --verbose=1
-/usr/bin/c++ CMakeFiles/cmTC_bf1c9.dir/src.cxx.o -o cmTC_bf1c9 
-CMakeFiles/cmTC_bf1c9.dir/src.cxx.o: In function `main':
-src.cxx:(.text+0x3e): undefined reference to `pthread_create'
-src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
-src.cxx:(.text+0x56): undefined reference to `pthread_cancel'
-src.cxx:(.text+0x67): undefined reference to `pthread_join'
-src.cxx:(.text+0x7b): undefined reference to `pthread_atfork'
+Run Build Command(s):/usr/bin/make cmTC_78342/fast && /usr/bin/make -f CMakeFiles/cmTC_78342.dir/build.make CMakeFiles/cmTC_78342.dir/build
+make[1]: Entering directory '/home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78342.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -std=c++17 -o CMakeFiles/cmTC_78342.dir/src.cxx.o -c /home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_78342
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78342.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_78342.dir/src.cxx.o  -o cmTC_78342 
+/usr/bin/ld: CMakeFiles/cmTC_78342.dir/src.cxx.o: in function `main':
+src.cxx:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.cxx:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.cxx:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_bf1c9.dir/build.make:98: recipe for target 'cmTC_bf1c9' failed
-make[1]: *** [cmTC_bf1c9] Error 1
-make[1]: Leaving directory '/home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_bf1c9/fast' failed
-make: *** [cmTC_bf1c9/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_78342.dir/build.make:87: cmTC_78342] Error 1
+make[1]: Leaving directory '/home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_78342/fast] Error 2
 
 
 Source file was:
 #include <pthread.h>
 
-static void* test_func(void* data)
+void* test_func(void* data)
 {
   return data;
 }
@@ -35,7 +31,6 @@ int main(void)
   pthread_t thread;
   pthread_create(&thread, NULL, test_func, NULL);
   pthread_detach(thread);
-  pthread_cancel(thread);
   pthread_join(thread, NULL);
   pthread_atfork(NULL, NULL, NULL);
   pthread_exit(NULL);
@@ -44,22 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_c9a07/fast && /usr/bin/make  -f CMakeFiles/cmTC_c9a07.dir/build.make CMakeFiles/cmTC_c9a07.dir/build
-make[1]: Entering directory '/home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c9a07.dir/CheckFunctionExists.cxx.o
-/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++1z -o CMakeFiles/cmTC_c9a07.dir/CheckFunctionExists.cxx.o -c /home/smhan/searchableHE_trials/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
-Linking CXX executable cmTC_c9a07
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9a07.dir/link.txt --verbose=1
-/usr/bin/c++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_c9a07.dir/CheckFunctionExists.cxx.o -o cmTC_c9a07  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_ef201/fast && /usr/bin/make -f CMakeFiles/cmTC_ef201.dir/build.make CMakeFiles/cmTC_ef201.dir/build
+make[1]: Entering directory '/home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef201.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c++17 -o CMakeFiles/cmTC_ef201.dir/CheckFunctionExists.cxx.o -c /home/hanseun/HE_searchable/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ef201
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef201.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ef201.dir/CheckFunctionExists.cxx.o  -o cmTC_ef201  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c9a07.dir/build.make:98: recipe for target 'cmTC_c9a07' failed
-make[1]: *** [cmTC_c9a07] Error 1
-make[1]: Leaving directory '/home/smhan/searchableHE_trials/build/CMakeFiles/CMakeTmp'
-Makefile:127: recipe for target 'cmTC_c9a07/fast' failed
-make: *** [cmTC_c9a07/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_ef201.dir/build.make:87: cmTC_ef201] Error 1
+make[1]: Leaving directory '/home/hanseun/HE_searchable/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ef201/fast] Error 2
 
 
 

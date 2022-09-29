@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/timetest.dir/src/timetest.cpp.o"
-  "CMakeFiles/timetest.dir/src/timetest.cpp.o.d"
   "bin/timetest"
   "bin/timetest.pdb"
 )
