@@ -34,31 +34,31 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
 # STRINGS avoids having the 2 newline characters at the end of the string.
 # Alternatively it's possible to use file(READ ...) and then
 # string(REGEX REPLACE "\n$" "" HELIB_VERSION "${HELIB_VERSION}")
-file(STRINGS "../HElib/VERSION" HELIB_VERSION)
+file(STRINGS "./HElib/VERSION" HELIB_VERSION)
 
 include_directories(./include) 
 
 find_package(helib "${HELIB_VERSION}" EXACT REQUIRED)
 
-add_executable(_main ./src/_main.cpp ./src/trie.cpp)
-target_link_libraries(_main helib)
+# add_executable(_main ./src/_main.cpp ./src/trie.cpp)
+# target_link_libraries(_main helib)
 
-add_executable(main ./src/main.cpp ./src/binary.cpp)
-target_link_libraries(main helib)
+# add_executable(main ./src/main.cpp ./src/binary.cpp)
+# target_link_libraries(main helib)
 
 add_executable(BGV_country_db_lookup ./src/BGV_country_db_lookup.cpp)
 target_link_libraries(BGV_country_db_lookup helib)
 
-add_executable(timetest ./src/timetest.cpp)
-target_link_libraries(timetest helib)
+# add_executable(timetest ./src/timetest.cpp)
+# target_link_libraries(timetest helib)
 
-add_executable(param_test ./src/param_test.cpp)
-target_link_libraries(param_test helib)
+# add_executable(param_test ./src/param_test.cpp)
+# target_link_libraries(param_test helib)
 
-add_executable(bitwise ./src/bitwise.cpp ./src/binary.cpp)
-target_link_libraries(bitwise helib)
+# add_executable(bitwise ./src/bitwise.cpp ./src/binary.cpp)
+# target_link_libraries(bitwise helib)
 
-add_executable(bmain ./src/bmain.cpp)
-target_link_libraries(bmain helib)
+# add_executable(bmain ./src/bmain.cpp)
+# target_link_libraries(bmain helib)
 
-#cmake -Dhelib_DIR=/home/smhan/helib_install/helib_pack/share/cmake/helib ../ .
+#cmake -Dhelib_DIR=./helib_pack/share/cmake/helib ./ .

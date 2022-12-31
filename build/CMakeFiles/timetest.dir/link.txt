@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/timetest.dir/src/timetest.cpp.o  -o bin/timetest  -Wl,-rpath,/home/hanseun/helib_install/helib_pack/lib /home/hanseun/helib_install/helib_pack/lib/libhelib.a /home/hanseun/helib_install/helib_pack/lib/libntl.so /home/hanseun/helib_install/helib_pack/lib/libgmp.so -lpthread 

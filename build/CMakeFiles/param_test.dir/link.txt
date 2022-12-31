@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/param_test.dir/src/param_test.cpp.o  -o bin/param_test  -Wl,-rpath,/home/hanseun/helib_install/helib_pack/lib /home/hanseun/helib_install/helib_pack/lib/libhelib.a /home/hanseun/helib_install/helib_pack/lib/libntl.so /home/hanseun/helib_install/helib_pack/lib/libgmp.so -lpthread 

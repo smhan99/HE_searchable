@@ -1,23 +1,14 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hanseun/HE_searchable/src/BGV_country_db_lookup.cpp" "/home/hanseun/HE_searchable/build/CMakeFiles/BGV_country_db_lookup.dir/src/BGV_country_db_lookup.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "HELIB_BOOT_THREADS"
-  "HELIB_THREADS"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  ".././include"
-  "/home/hanseun/helib_install/helib_pack/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/workspaces/HE_searchable/src/BGV_country_db_lookup.cpp" "CMakeFiles/BGV_country_db_lookup.dir/src/BGV_country_db_lookup.cpp.o" "gcc" "CMakeFiles/BGV_country_db_lookup.dir/src/BGV_country_db_lookup.cpp.o.d"
   )
 
 # Targets to which this target links.

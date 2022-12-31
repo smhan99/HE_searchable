@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/_main.dir/src/_main.cpp.o CMakeFiles/_main.dir/src/trie.cpp.o  -o bin/_main  -Wl,-rpath,/home/hanseun/helib_install/helib_pack/lib /home/hanseun/helib_install/helib_pack/lib/libhelib.a /home/hanseun/helib_install/helib_pack/lib/libntl.so /home/hanseun/helib_install/helib_pack/lib/libgmp.so -lpthread 

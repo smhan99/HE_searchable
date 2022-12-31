@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BGV_country_db_lookup.dir/src/BGV_country_db_lookup.cpp.o"
+  "CMakeFiles/BGV_country_db_lookup.dir/src/BGV_country_db_lookup.cpp.o.d"
   "bin/BGV_country_db_lookup"
   "bin/BGV_country_db_lookup.pdb"
 )
