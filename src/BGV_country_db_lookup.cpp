@@ -85,6 +85,7 @@ int main(int argc, char* argv[])
            "Qualified name for the database filename");
   amap.toggle().arg("-debug", debug, "Toggle debug output", "");
   amap.parse(argc, argv);
+  std::cout << debug<< std::endl;
 
   // set NTL Thread pool size
   if (nthreads > 1)
