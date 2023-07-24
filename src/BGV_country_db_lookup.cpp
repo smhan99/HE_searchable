@@ -57,15 +57,15 @@ int main(int argc, char* argv[])
   // Do Not use these parameters in real applications.
 
   // Plaintext prime modulus
-  unsigned long p = 131;
+  unsigned long p = 167;//131;
   // Cyclotomic polynomial - defines phi(m)
-  unsigned long m = 130; // this will give 48 slots
+  unsigned long m = 28057;//130; // this will give 48 slots
   // Hensel lifting (default = 1)
   unsigned long r = 1;
   // Number of bits of the modulus chain
   unsigned long bits = 1000;
   // Number of columns of Key-Switching matrix (default = 2 or 3)
-  unsigned long c = 2;
+  unsigned long c = 3;
   // Size of NTL thread pool (default =1)
   unsigned long nthreads = 1;
   // input database file name
@@ -160,7 +160,7 @@ int main(int argc, char* argv[])
   std::cout << "\nNumber of slots: " << nslots << std::endl;
 
   /************ Read in the database ************/
-  db_filename = "../../"+db_filename+".csv";
+  db_filename = "../../data/"+db_filename+".csv";
   std::vector<std::pair<std::string, std::string>> country_db;
   try {
     country_db = read_csv(db_filename);
